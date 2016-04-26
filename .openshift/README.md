@@ -9,7 +9,7 @@ Create application with Postgresql and Redis support. There is no in house Redis
 ```Bash
 $ rhc app create discourse ruby-2.0
 $ rhc cartridge add postgresql-9.2 -a discourse
-$ rhc cartridge add http://cartreflect-claytondev.rhcloud.com/reflect?github=smarterclayton/openshift-redis-cart -a discourse
+$ rhc cartridge add http://cartreflect-claytondev.rhcloud.com/reflect?github=frantisekz/openshift-redis-cart -a discourse
 ```
 
 add quickstart upstream and get the code
