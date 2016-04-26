@@ -7,7 +7,7 @@ Create application with Postgresql and Redis support. There is no in house Redis
 *NOTE: No security updates come with Redis cartridge, have to watch for dangers on your own.*
 
 ```Bash
-$ rhc app create discourse ruby-1.9
+$ rhc app create discourse ruby-2.0
 $ rhc cartridge add postgresql-9.2 -a discourse
 $ rhc cartridge add http://cartreflect-claytondev.rhcloud.com/reflect?github=smarterclayton/openshift-redis-cart -a discourse
 ```
@@ -16,7 +16,7 @@ add quickstart upstream and get the code
 
 ```Bash
 $ cd discourse
-$ git remote add upstream -m master git@github.com:frantisekz/discourse.git
+$ git remote add upstream -m master https://github.com/frantisekz/discourse.git
 $ git pull -s recursive -X theirs upstream master
 ```
 
